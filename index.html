@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/light-favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lloyd Jefferson portfolio website. 
+      The site includes a photo, bio, technical and software skills, projects, 
+      and contact information for getting in touch with the mr. Jefferson."
+    />
+    <title>Lloyd Jefferson</title>
+    
+    <script type="module" crossorigin src="/portfolio-project/commonHelpers.js"></script>
+    <link rel="stylesheet" href="/portfolio-project/assets/index-c663a052.css">
+  </head>
+  <body>
+    
+    <header class="header">
+  <div class="container header-container">
+    <p class="header-logo">Lloyd<span>Jefferson.</span></p>
+    <input
+      type="checkbox"
+      class="header-theme-checkbox theme-checkbox"
+      id="change-theme"
+    />
+    <label for="change-theme" class="visually-hidden">Change theme</label>
+    <nav class="header-navigation">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="#about" class="link-hover">About me</a>
+        </li>
+        <li class="header-item">
+          <a href="#my-projects" class="link-hover">Projects</a>
+        </li>
+        <li class="header-item">
+          <a href="#contacts" class="link-hover">Contacts</a>
+        </li>
+      </ul>
+      <button type="button" class="open-menu-btn">
+        <span class="visually-hidden">Open menu</span>
+        <svg class="icon-open-menu" width="32" height="32">
+          <use href="./img/sprite.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+  <div class="mob-menu-container">
+    <nav class="mob-menu-navigation">
+      <a class="header-logo" href="./">Lloyd<span>Jefferson.</span></a>
+      <button type="button" class="close-menu-btn">
+        <span class="visually-hidden">Close menu</span>
+        <svg width="32" height="32" class="icon-close-btn">
+          <use href="./img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </nav>
+    <ul class="mob-menu-list">
+      <li class="mob-menu-item">
+        <a href="#about" class="link-hover">About me</a>
+      </li>
+      <li class="mob-menu-item">
+        <a href="#my-projects" class="link-hover">Projects</a>
+      </li>
+      <li class="mob-menu-item">
+        <a href="#contacts" class="link-hover">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</header>
+    <main>
+     
+      <section class="section hero-section" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-first-part">
+          <h1 class="hero-title">
+            Hello, I am
+            <span class="hero-title-part text-split letters-fade-in-random"
+              >Fullstack developer</span
+            >
+          </h1>
+          <a class="hero-link" href="#contacts">
+            <svg class="social-icons" width="30" height="16">
+              <use href="/img/sprite.svg#icon-arrow-right-hero"></use>
+            </svg>
+            <p class="hero-link-text">Order the project</p>
+          </a>
+        </div>
+        <div class="hero-second-part">
+          <picture>
+            <source
+              srcset="
+                ./img/hero/hero-webp/hero-img-dp-1x.webp 1x,
+                ./img/hero/hero-webp/hero-img-dp-2x.webp 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                /img/hero/hero-img-dp-1x.jpg 1x,
+                /img/hero/hero-img-dp-2x.jpg 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/jpg"
+            />
+            <img
+              loading="lazy"
+              src="/img/hero/hero-img-dp-1x.jpg"
+              alt="photo-of-Lloyd-Jefferson"
+              width="592"
+              height="444"
+              class="hero-img"
+            />
+          </picture>
+          <p class="hero-text">
+            I work with people all over the world to create
+            <span class="hero-text-part">impressive</span> and
+            <span class="hero-text-part">functional websites</span> that reflect
+            each client’s unique personality.
+          </p>
+        </div>
+      </div>
+    </div>
+    <ul class="hero-social-list">
+      <li class="hero-social-item">
+        <a
+          class="hero-social-link link-hover"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          >Instagram</a
+        >
+      </li>
+      <li class="hero-social-item">
+        <a
+          class="hero-social-link link-hover"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          >Facebook</a
+        >
+      </li>
+      <li class="hero-social-item">
+        <a
+          class="hero-social-link link-hover"
+          href="https://www.linkedin.com/school/goit-start-your-career-in-it/"
+          target="_blank"
+          >Linkedin</a
+        >
+      </li>
+      <li class="hero-social-item">
+        <a
+          class="hero-social-link link-hover"
+          href="https://github.com/Vikto0004/browser-battalion-2.0"
+          target="_blank"
+          >GitHub</a
+        >
+      </li>
+    </ul>
+  </section>
+     
+      <section id="about" class="section about">
+    <div class="about-container container">
+      <h2 class="about-title section-title">
+        About <span class="text-split letters-fade-in-random">me</span>
+      </h2>
+  
+      <div class="about-content">
+        <div class="about-firstpart">
+          <picture class="about-picture">
+            <source
+              srcset="
+                ./img/about/about-img-mob-1x.webp 1x,
+                ./img/about/about-img-mob-2x.webp 2x
+              "
+              media="(max-width:767px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/about/about-img-mob-1x.jpg 1x,
+                ./img/about/about-img-mob-2x.jpg 2x
+              "
+              media="(max-width:767px)"
+              type="image/jpg"
+            />
+  
+            <source
+              srcset="
+                ./img/about/about-img-tab-1x.webp 1x,
+                ./img/about/about-img-tab-2x.webp 2x
+              "
+              media="(max-width:1279px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/about/about-img-tab-1x.jpg 1x,
+                ./img/about/about-img-tab-2x.jpg 2x
+              "
+              media="(max-width:1279px)"
+              type="image/jpg"
+            />
+  
+            <source
+              srcset="
+                ./img/about/about-img-1x.webp 1x,
+                ./img/about/about-img-2x.webp 2x
+              "
+              media="(min-width:1280px)"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./img/about/about-img-1x.jpg 1x,
+                ./img/about/about-img-2x.jpg 2x
+              "
+              media="(min-width:1280px)"
+              type="image/jpg"
+            />
+  
+            <img
+              class="about-img"
+              src="./img/about/about-img-mob-1x.jpg"
+              alt="Lloyd Jefferson"
+              width="320"
+              height="374"
+            />
+          </picture>
+  
+          <div class="about-summary">
+            <h3 class="about-subtitle">BIO</h3>
+            <p class="about-text">
+              I'm Lloyd Jefferson, a talented programmer specializing in software
+              development. My expertise spans various programming languages and
+              technologies, and I am dedicated to continually enhancing my skills.
+              I thrive on seeking unconventional and creative solutions to
+              problems, leveraging a high level of analytical skills to
+              effectively tackle even the most challenging tasks.
+            </p>
+            <p>
+              Adaptable to both independent and team-oriented work, I collaborate
+              seamlessly with colleagues, exchanging ideas and finding optimal
+              solutions. My professional maturity enables me to navigate
+              challenges and stressful situations with a calm demeanor,
+              maintaining a consistently high quality of work. Committed to
+              self-improvement, I actively engage in studying new technologies and
+              practices to stay current with the latest innovations in the field.
+            </p>
+          </div>
+        </div>
+  
+        <div class="about-secondpart">
+          <ul class="about-secondpart-list">
+            <li class="about-secondpart-list-item">
+              <h3 class="about-subtitle">EDUCATION</h3>
+              <ul class="about-secondpart-sublist">
+                <li class="about-secondpart-sublist-item">
+                  2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
+                  York
+                </li>
+                <li class="about-secondpart-sublist-item">
+                  2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+                  School, New York
+                </li>
+                <li class="about-secondpart-sublist-item">
+                  2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+                </li>
+              </ul>
+            </li>
+            <li class="about-secondpart-list-item">
+              <h3 class="about-subtitle">ROLE</h3>
+              <ul class="about-secondpart-sublist">
+                <li class="about-secondpart-sublist-item">
+                  Frontend development
+                </li>
+                <li class="about-secondpart-sublist-item">
+                  HeadlessCMS, Wordpress
+                </li>
+                <li class="about-secondpart-sublist-item">Blender (enjoy)</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <section class="section tech-skills-section">
+    <div class="running-line-container">
+      <h2 class="setion-title visually-hidden">My Tech skills</h2>
+      <div class="tech-skills-box">
+        <ul class="tech-skils-running-line-list">
+          <li class="tech-skils-running-line-item">Html/Css</li>
+          <li class="tech-skils-running-line-item">Javascript</li>
+          <li class="tech-skils-running-line-item">React</li>
+          <li class="tech-skils-running-line-item">Node.js</li>
+          <li class="tech-skils-running-line-item">React Native</li>
+          <li class="tech-skils-running-line-item">Typescript</li>
+        </ul>
+        <ul class="tech-skils-running-line-list">
+          <li class="tech-skils-running-line-item">Html/Css</li>
+          <li class="tech-skils-running-line-item">Javascript</li>
+          <li class="tech-skils-running-line-item">React</li>
+          <li class="tech-skils-running-line-item">Node.js</li>
+          <li class="tech-skils-running-line-item">React Native</li>
+          <li class="tech-skils-running-line-item">Typescript</li>
+        </ul>
+        <ul class="tech-skils-running-line-list">
+          <li class="tech-skils-running-line-item">Html/Css</li>
+          <li class="tech-skils-running-line-item">Javascript</li>
+          <li class="tech-skils-running-line-item">React</li>
+          <li class="tech-skils-running-line-item">Node.js</li>
+          <li class="tech-skils-running-line-item">React Native</li>
+          <li class="tech-skils-running-line-item">Typescript</li>
+        </ul>
+      </div>
+      <div class="tech-skills-box-second">
+        <ul class="tech-skils-running-line-list type-two">
+          <li class="tech-skils-running-line-item type-two">Html/Css</li>
+          <li class="tech-skils-running-line-item type-two">Javascript</li>
+          <li class="tech-skils-running-line-item type-two">React</li>
+          <li class="tech-skils-running-line-item type-two">Node.js</li>
+          <li class="tech-skils-running-line-item type-two">React Native</li>
+          <li class="tech-skils-running-line-item type-two">Typescript</li>
+        </ul>
+        <ul class="tech-skils-running-line-list type-two">
+          <li class="tech-skils-running-line-item type-two">Html/Css</li>
+          <li class="tech-skils-running-line-item type-two">Javascript</li>
+          <li class="tech-skils-running-line-item type-two">React</li>
+          <li class="tech-skils-running-line-item type-two">Node.js</li>
+          <li class="tech-skils-running-line-item type-two">React Native</li>
+          <li class="tech-skils-running-line-item type-two">Typescript</li>
+        </ul>
+        <ul class="tech-skils-running-line-list type-two">
+          <li class="tech-skils-running-line-item type-two">Html/Css</li>
+          <li class="tech-skils-running-line-item type-two">Javascript</li>
+          <li class="tech-skils-running-line-item type-two">React</li>
+          <li class="tech-skils-running-line-item type-two">Node.js</li>
+          <li class="tech-skils-running-line-item type-two">React Native</li>
+          <li class="tech-skils-running-line-item type-two">Typescript</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+      <section id="my-projects" class="section projects">
+    <div class="container projects-container">
+      <h2 class="section-title projects-title">
+        my <span class="text-split letters-fade-in-random">projects</span>
+      </h2>
+      <ul class="projects-list"></ul>
+      <button type="button" class="projects-load-btn">LOAD MORE</button>
+    </div>
+  </section>
+
+      <section class="section">
+    <div class="container">
+      <h2 class="section-title benefits-title">
+        <span class="text-split letters-fade-in-random">Benefits</span> of working
+        with me
+      </h2>
+      <ul class="benefits-list">
+        <li class="benefits-list-item">
+          <div class="benefits-icons-section">
+            <svg class="benefits-icon-item" width="48" height="48">
+              <use href="./img/sprite.svg#icon-user"></use>
+            </svg>
+          </div>
+          <p class="benefits-subtitle">Expertise</p>
+          <p class="benefits-item-text">
+            With extensive experience in development, I have a deep understanding
+            of programming and website development.
+          </p>
+        </li>
+        <li class="benefits-list-item">
+          <div class="benefits-icons-section">
+            <svg class="benefits-icon-item" width="48" height="48">
+              <use href="./img/sprite.svg#icon-message-chat"></use>
+            </svg>
+          </div>
+          <p class="benefits-subtitle">Communication</p>
+          <p class="benefits-item-text">
+            Understanding your needs and wants is my priority and I am always
+            available for discussions and open to corrections.
+          </p>
+        </li>
+        <li class="benefits-list-item">
+          <div class="benefits-icons-section">
+            <svg class="benefits-icon-item" width="48" height="48">
+              <use href="./img/sprite.svg#icon-brush"></use>
+            </svg>
+          </div>
+          <p class="benefits-subtitle">Art</p>
+          <p class="benefits-item-text">
+            Thanks to my creative nature, I am ready to accept challenges and help
+            you bring your ideas to life.
+          </p>
+        </li>
+        <li class="benefits-list-item">
+          <div class="benefits-icons-section">
+            <svg class="benefits-icon-item" width="48" height="48">
+              <use href="./img/sprite.svg#icon-hourglass"></use>
+            </svg>
+          </div>
+          <p class="benefits-subtitle">Urgent execution</p>
+          <p class="benefits-item-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+   
+      <section id="faq" class="section faq-section">
+    <div class="container faq-container">
+      <div class="faq-title-wrap">
+        <h2 class="section-title faq-title">
+          Frequently asked
+          <span class="faq-title-span text-split letters-fade-in-random"
+            >question</span
+          >
+        </h2>
+        <div class="faq-img-wrap"></div>
+      </div>
+  
+      <ul class="faq-list accordion-container">
+        <li
+          class="faq-list-item ac is-active border-top-animate border-bottom-animate"
+        >
+          <h3 class="faq-item-title">
+            <button type="button" class="faq-button ac-trigger">
+              What programming languages are most often used in your project?
+              <svg class="faq-dropdown" width="24" height="24">
+                <use href="./img/sprite.svg#icon-arrow-dropdown"></use>
+              </svg>
+            </button>
+          </h3>
+  
+          <div class="faq-text-wrap ac-panel">
+            <p class="faq-item-text">
+              In the field of web development, there are various technologies and
+              programming languages. Typically, this includes a combination of
+              frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </li>
+  
+        <li class="faq-list-item ac">
+          <h3 class="faq-item-title">
+            <button type="button" class="faq-button ac-trigger">
+              What are the deadlines for the project?
+              <svg class="faq-dropdown" width="24" height="24">
+                <use href="./img/sprite.svg#icon-arrow-dropdown"></use>
+              </svg>
+            </button>
+          </h3>
+  
+          <div class="faq-text-wrap ac-panel">
+            <p class="faq-item-text ac-panel">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its complexity,
+              and the availability of resources. Determining exact deadlines is a
+              difficult task, and it usually occurs during the planning phase of
+              the project.
+            </p>
+          </div>
+        </li>
+  
+        <li class="faq-list-item ac">
+          <h3 class="faq-item-title">
+            <button type="button" class="faq-button ac-trigger">
+              What payment methods do you accept?
+              <svg class="faq-dropdown" width="24" height="24">
+                <use href="./img/sprite.svg#icon-arrow-dropdown"></use>
+              </svg>
+            </button>
+          </h3>
+  
+          <div class="faq-text-wrap ac-panel">
+            <p class="faq-item-text ac-panel">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </li>
+  
+        <li class="faq-list-item ac">
+          <h3 class="faq-item-title">
+            <button type="button" class="faq-button ac-trigger">
+              How can I contact you?
+              <svg class="faq-dropdown" width="24" height="24">
+                <use href="./img/sprite.svg#icon-arrow-dropdown"></use>
+              </svg>
+            </button>
+          </h3>
+  
+          <div class="faq-text-wrap ac-panel">
+            <p class="faq-item-text ac-panel">
+              In the field of web development, there are various technologies and
+              programming languages. Typically, this includes a combination of
+              frontend (client side) and backend (server side) languages.
+            </p>
+          </div>
+        </li>
+  
+        <li class="faq-list-item ac">
+          <h3 class="faq-item-title">
+            <button type="button" class="faq-button ac-trigger">
+              Do you provide advice or support?
+              <svg class="faq-dropdown" width="24" height="24">
+                <use href="./img/sprite.svg#icon-arrow-dropdown"></use>
+              </svg>
+            </button>
+          </h3>
+  
+          <div class="faq-text-wrap ac-panel">
+            <p class="faq-item-text ac-panel">
+              The terms of project implementation depend to a large extent on a
+              number of factors, such as the scope of the project, its complexity,
+              and the availability of resources. Determining exact deadlines is a
+              difficult task, and it usually occurs during the planning phase of
+              the project.
+            </p>
+          </div>
+        </li>
+  
+        <li class="faq-list-item ac">
+          <h3 class="faq-item-title">
+            <button type="button" class="faq-button ac-trigger">
+              What does the process of developing a software product look like
+              from idea to implementation?
+              <svg class="faq-dropdown" width="24" height="24">
+                <use href="./img/sprite.svg#icon-arrow-dropdown"></use>
+              </svg>
+            </button>
+          </h3>
+  
+          <div class="faq-text-wrap ac-panel">
+            <p class="faq-item-text ac-panel">
+              Payment through credit and debit cards such as Visa, MasterCard,
+              specialized electronic payment systems such as PayPal, as well as
+              payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+   
+      <section class="section section-reviews">
+    <div class="container">
+      <h2 class="section-title is-reviews">Reviews</h2>
+  
+      <!-- Swiper -->
+      <div id="reviews-slider" class="swiper">
+        <ul class="swiper-wrapper is-reviews"></ul>
+        <div class="reviews-slider-nav">
+          <div class="swiper-button-prev">
+            <svg width="24" height="24" class="swiper-button-prev-icon">
+              <use href="./img/sprite.svg#icon-arrow-right-reviews"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg width="24" height="24" class="swiper-button-next-icon">
+              <use href="./img/sprite.svg#icon-arrow-right-reviews"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <section class="section section-together" id="contacts">
+    <div class="container work-together-container">
+      <div class="work-together-section-left">
+        <h3 class="section-title work-together-title">
+          let’s
+          <span class="text-split letters-fade-in-random">work together</span>
+        </h3>
+        <div class="work-together-decor"></div>
+        <p class="work-together-text">
+          Contact me to transform your ideas into exceptional solutions.
+        </p>
+        <ul class="work-together-list">
+          <li class="work-together-item">
+            <svg class="work-together-icon" width="20" height="20">
+              <use href="img/sprite.svg#icon-phone"></use>
+            </svg>
+            <a href="tel:+380904567890" class="link-hover work-together-link"
+              >+38 090 456 78 90</a
+            >
+          </li>
+          <li class="work-together-item">
+            <svg class="work-together-icon" width="20" height="20">
+              <use href="img/sprite.svg#icon-mail"></use>
+            </svg>
+            <a
+              href="mailto:lloydjefferson@gmail.com"
+              class="link-hover work-together-link"
+              >lloydjefferson@gmail.com</a
+            >
+          </li>
+          <li class="work-together-item">
+            <svg class="work-together-icon" width="20" height="20">
+              <use href="img/sprite.svg#icon-lacation"></use>
+            </svg>
+            <a href="#" class="link-hover work-together-link">USA, New York</a>
+          </li>
+        </ul>
+      </div>
+      <div class="work-together-section-right">
+        <form class="work-together-form">
+          <input
+            class="work-together-input"
+            name="email"
+            type="email"
+            placeholder="Your email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+            id="enter-email"
+          />
+          <label for="enter-email" class="visually-hidden">Enter email</label>
+          <svg class="work-together-success" width="14" height="14">
+            <use href="img/sprite.svg#icon-ep_success-filled"></use>
+          </svg>
+          <p class="work-together-errorInput">Invalid email, try again</p>
+          <textarea
+            class="work-together-message"
+            name="Message"
+            placeholder="Message"
+            minlength="10"
+            id="enter-massage"
+          ></textarea>
+          <label for="enter-massage" class="visually-hidden">Enter massage</label>
+          <p class="work-together-errorMessage">the field must be filled</p>
+          <button class="work-together-sumbit" type="submit">SEND MESSAGE</button>
+        </form>
+        <span class="work-together-loader is-hide"></span>
+      </div>
+      <div class="work-together-backdrop">
+        <div class="work-together-modal">
+          <button class="work-together-close">
+            <svg class="work-together-close-icon" width="24" height="24">
+              <use href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <h3 class="work-together-modal-title"></h3>
+          <p class="work-together-modal-text"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+    </main>
+
+    <footer class="footer">
+    <div class="container">
+      <div class="footer-wrap">
+        <p class="footer-logo">Lloyd<span>Jefferson.</span></p>
+        <ul class="footer-list">
+          <li>
+            <a
+              class="link-hover"
+              href="https://www.instagram.com/goitclub/"
+              target="_blank"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-hover"
+              href="https://www.facebook.com/goITclub/"
+              target="_blank"
+              >Facebook</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-hover"
+              href="https://www.youtube.com/c/GoIT"
+              target="_blank"
+              >Linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-hover"
+              href="https://github.com/Vikto0004/browser-battalion-2.0"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p class="footer-text">© Copyright 2024. Made by LloydJefferson</p>
+    </div>
+  </footer>
+  <button type="button" class="scroll-btn">
+    <svg class="scroll-btn-icon">
+      <use href="./img/sprite.svg#icon-arrow-dropdown"></use>
+    </svg>
+  </button>
+    
+  </body>
+</html>
