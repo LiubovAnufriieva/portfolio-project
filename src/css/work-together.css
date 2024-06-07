@@ -138,7 +138,7 @@
     border-radius: 16px;
     padding: 48px 32px;
   }
-  .work-together-close {
+  .work-together-close{
     background-color: transparent;
     position: absolute;
     top: 16px;
@@ -252,7 +252,7 @@
       height: 280px;
       padding: 64px;
     }
-    .work-together-close {
+    .work-together-closeBtn {
       top: 26px;
       right: 26px;
     }
