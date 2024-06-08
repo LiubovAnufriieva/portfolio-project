@@ -13,7 +13,7 @@ const closeMenu = () => {
 document.querySelector('.open-menu-btn').addEventListener('click', openMenu);
 document.querySelector('.close-menu-btn').addEventListener('click', closeMenu);
 
-const scrollSection = event => {
+const scrollToSection = event => {
     event.preventDefault();
     const targetId = event.currentTarget.getAttribute('href').slice(1);
     const targetSection = document.getElementById(targetId);
@@ -27,5 +27,5 @@ const scrollSection = event => {
 };
 
 document.querySelectorAll('.mob-menu-list a').forEach(link => {
-    link.addEventListener('click', scrollSection);
+    link.addEventListener('click', scrollToSection);
 });
