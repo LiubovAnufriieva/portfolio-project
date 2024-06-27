@@ -1,18 +1,20 @@
-.section-reviews {
-}
+.section-reviews {}
 
 .section-title.is-reviews {
-text-align: center;
-margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
+
 .is-reviews {
   height: auto !important;
 }
+
 .swiper {
   width: 100%;
   height: 100%;
   position: relative;
-} 
+}
+
 .reviews-review-card {
   border-radius: 16px;
   padding: 32px;
@@ -24,19 +26,23 @@ margin-bottom: 40px;
   gap: 24px;
   height: 296px !important;
 }
+
 .review-card-text {
   overflow: auto;
 }
+
 .review-card-author {
   display: flex;
   align-items: center;
   gap: 16px;
 }
+
 .review-card-author-avatar {
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 50%;
 }
+
 .review-card-author-name {
   font-weight: 600;
 }
@@ -60,26 +66,30 @@ margin-bottom: 40px;
   width: 40px !important;
   height: 40px !important;
 }
+
 .swiper-button-prev {
   transform: rotate(180deg);
 }
+
 .swiper-button-next svg,
 .swiper-button-prev svg {
   flex-shrink: 0;
   fill: transparent;
   stroke: var(--text);
 }
+
 .swiper-button-disabled {
   opacity: 0.3;
 }
 
 @media screen and (min-width: 768px) {
-.reviews-review-card {
-  height: 224px !important;
-}
+  .reviews-review-card {
+    height: 224px !important;
+  }
 }
 
 @media screen and (min-width: 1280px) {
+
   .swiper-button-next,
   .swiper-button-prev {
     width: 48px !important;
@@ -88,12 +98,12 @@ margin-bottom: 40px;
     outline: none;
     cursor: pointer;
   }
+
   .swiper-button-next:focus,
   .swiper-button-prev:focus,
   .swiper-button-next:hover,
   .swiper-button-prev:hover {
     background-color: var(--light-grey);
-  }  
-  
+  }
+
 }
-  

@@ -43,7 +43,7 @@ and only if we get status ok, go to the next step
 
 const fetchReviews = async () => {
     try {
-        const response = await axios(
+        const response = await axios.get(
             'https://portfolio-js.b.goit.study/api/reviews'
         );
         if (response.status !== 200) {
